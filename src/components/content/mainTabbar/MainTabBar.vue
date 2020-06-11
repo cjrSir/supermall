@@ -22,7 +22,6 @@
         <div slot="item-text">我的</div>
       </TabBarItem>
     </TabBar>
-    <router-view/>
   </div>
 </template>
 
