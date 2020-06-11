@@ -1,7 +1,7 @@
 <template>
   <div id="home" class="wrapper">
       <NavBar class="navbar"><div slot="center">购物街</div></NavBar>
-     <tab-control ref="tabControl1" v-show="isTabFixed"
+     <TabControl ref="tabControl1" v-show="isTabFixed"
       :titles="['流行','新款','精选']" 
       @tabClick="tabClick" class="tab-control"/>
 
@@ -15,7 +15,7 @@
       <HomeSwiper :banners="banners" @imageLoad="imageLoad"></HomeSwiper>
       <HomeRecommendView :recommends="recommends"></HomeRecommendView>
       <FeatureView></FeatureView>
-      <tab-control ref="tabControl2"
+      <TabControl ref="tabControl2"
       :titles="['流行','新款','精选']" 
       @tabClick="tabClick"/>
       <goods-list :goods="showGoods"></goods-list>
