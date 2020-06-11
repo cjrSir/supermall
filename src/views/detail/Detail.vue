@@ -120,7 +120,6 @@ export default {
     //3.请求详情数据
     getRecommend().then(res => {
       this.recommends = res.data.data.list;
-      console.log(this.recommends);
     });
     //图片加载完成后，才能获取正确的高度
     this.getTopYs = debounce(() => {
@@ -202,7 +201,6 @@ export default {
 
       //2.将商品添加到购物车里
       this.$store.dispatch('addCart', product).then(res => {
-        console.log(res)
       this.show = true
         this.message = res
 
